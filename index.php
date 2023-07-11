@@ -1,9 +1,9 @@
 <?php 
-include './include/connection.php';
-include './include/form.php';
-include './include/select.php';
-include './include/db_close.php';
-include './prt/head.php';
+include './connection.php';
+include './form.php';
+include './select.php';
+include './db_close.php';
+//include './prt/head.php';
 ?>
 <!DOCTYPE html><html>
 <head>
@@ -12,9 +12,9 @@ include './prt/head.php';
 
 
 </head>
- //
 
-<div>include_once './prt/header.php';?>
+<div>
+ <?php include_once './prt/header.php';?>
 
 <?php
  ./include_once './prt/nfrom.php';?>
