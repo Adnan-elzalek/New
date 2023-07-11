@@ -1,0 +1,659 @@
+
+/************************* General *************************/
+*
+{
+	box-sizing:border-box;
+}
+html
+{
+	direction:rtl;
+}
+body
+{
+	color:#000;
+	margin:0;
+	background:#ccc;
+}
+body,p,ul,ol,li
+{
+	font:400 13px 'DroidKufi','Montserrat','Tahoma';
+}
+h1
+{
+	text-align:center;
+}
+a:link
+{
+	text-decoration:none;
+	transition:all 0.2s;
+}
+a:link,a:visited,a:active
+{
+	color:#000;
+}
+a:hover,a:focus
+{
+	color:#00f;
+}
+hr
+{
+	height:1px;
+	border:none;
+	background:#ddd;
+	margin:5px 0;
+}
+b
+{
+	letter-spacing:0.5px;
+}
+img
+{
+	max-width:100%;
+	height:auto;
+}
+img.border
+{
+	opacity:1;
+	transition:all 0.4s;
+}
+img.border:hover
+{
+	opacity:0.7;
+}
+iframe
+{
+	font:400 15px 'DroidKufi','Montserrat','Tahoma';
+	color:#000;
+	border:1px solid #CCC;
+	background:#FFF;
+}
+@media only screen and (min-width:900px)
+{
+	body,p,ul,ol,li
+	{
+		font-size:15px;
+	}
+}
+/************************* Main *************************/
+div.boxed
+{
+	position:relative;
+	background:#fff;
+}
+div.block
+{
+	padding:5px 5px 15px 5px;
+	text-align:right;
+}
+div.title
+{
+	color:#E1AB00;
+	font:400 16px 'GESSTwoMedium';
+	text-align:right;
+	padding:10px 10px 0 0;
+}
+div.title img
+{
+	vertical-align:middle;
+	margin:0 0 5px 10px;
+}
+div.profile
+{}
+div.profile div::before
+{
+	font:900 16px 'FontAwesome';
+	content:"\f0d9";
+	margin:0 10px;
+}
+div.profile span.group::after
+{
+	font:900 18px 'FontAwesome';
+	content:"\f007";
+	margin:0 10px;
+}
+div.divhidden
+{
+	display:none;
+}
+div.captcha
+{
+	height:50px;
+}
+div.clearfix::after
+{
+	content:"";
+	clear:both;
+	display:table;
+}
+div.divright2
+{
+	float:right;
+}
+div.divleft2
+{
+	float:left;
+}
+@media only screen and (min-width:900px)
+{
+	div.boxed
+	{
+		max-width:1250px;
+		border-right:1px dashed #bbb;
+		border-left:1px dashed #bbb;
+	}
+	div.block
+	{
+		padding:5px 25px 25px 25px;
+	}
+	div.title
+	{
+		padding:15px 25px 0 0;
+		font-size:18px;
+	}
+	div.divright
+	{
+		float:right;
+	}
+	div.divleft
+	{
+		float:left;
+	}
+	div.divwidth20
+	{
+		width:20%;
+	}
+	div.divwidth25
+	{
+		width:25%;
+	}
+	div.divwidth30
+	{
+		width:30%;
+	}
+	div.divwidth35
+	{
+		width:35%;
+	}
+	div.divwidth40
+	{
+		width:40%;
+	}
+	div.divwidth45
+	{
+		width:45%;
+	}
+	div.divwidth50
+	{
+		width:50%;
+	}
+	div.divwidth55
+	{
+		width:55%;
+	}
+	div.divwidth60
+	{
+		width:60%;
+	}
+	div.divwidth65
+	{
+		width:65%;
+	}
+	div.divwidth70
+	{
+		width:70%;
+	}
+	div.divwidth75
+	{
+		width:75%;
+	}
+	div.divwidth80
+	{
+		width:80%;
+	}
+	div.divwidth90
+	{
+		width:90%;
+	}
+	div.divhidden
+	{
+		display:block;
+	}
+}
+/************************* Tables *************************/
+table
+{
+	width:100%;
+}
+table.block
+{
+	padding:0px 7px;
+	margin:7px 0px;
+	border-collapse:collapse;
+	border:1px dashed #2EA4DD;
+}
+table.block td
+{
+	border:1px dashed #2EA4DD;
+}
+tr.c
+{
+	text-align:center;
+}
+tr.c1
+{
+	background:#D5EFFB;
+	text-align:center;
+}
+tr.c2,tr.c3
+{
+	background:#EAF6FB;
+	text-align:center;
+}
+tr.c2:hover,tr.c3:hover
+{
+	background:#D5EFFB;
+	transition:all 0.2s;
+}
+td
+{
+	font:400 13px 'DroidKufi','Montserrat','Tahoma';
+	color:#000;
+}
+td.block
+{
+	background:#fff;
+}
+@media only screen and (min-width:900px)
+{
+	td
+	{
+		font-size:15px;
+	}
+}
+/************************* Forms *************************/
+form
+{
+	margin:0;
+}
+input,textarea,select
+{
+	font:400 15px 'DroidKufi','Montserrat','Tahoma';
+	color:#000;
+	border:none;
+	width:100%;
+	max-width:500px;
+	background:#DFF2FB;
+	padding:7px 9px;
+	margin:5px 0;
+	transition:all 0.4s;
+	vertical-align:middle;
+}
+select:hover,select:focus,textarea:hover,textarea:focus,input:hover,input:focus
+{
+	color:#000;
+	background:#B2E4FB;
+	outline:none;
+}
+textarea::placeholder,input::placeholder
+{
+	color:#000;
+}
+input[type=image],input.widthauto
+{
+	width:auto;
+}
+input[type=radio],input[type=checkbox]
+{
+	width:auto;
+	display:inline;
+	vertical-align:text-bottom;
+	outline:none;
+	margin:5px 7px;
+}
+input.button,input[type=submit],input[type=reset],button,a.button
+{
+	font:400 15px 'DroidKufi','Montserrat','Tahoma';
+	color:#fff;
+	border:none;
+	background:#2EA4DD;
+	padding:6px 12px;
+	margin:0;
+	display:inline-block;
+	width:auto;
+	outline:none;
+	cursor:pointer;
+	transition:all 0.2s;
+}
+input.button:hover,input[type=submit]:hover,input[type=reset]:hover,button:hover,a.button:hover
+{
+	background:#555;
+	outline:none;
+}
+label
+{
+	cursor:pointer;
+}
+/************************* Colors *************************/
+.green
+{
+	color:#080;
+}
+.blue
+{
+	color:#2EA4DD;
+}
+.red
+{
+	color:#f00;
+}
+.magenta
+{
+	color:#f0f;
+}
+.navy
+{
+	color:#008;
+}
+.gray
+{
+	color:#aaa;
+}
+.white
+{
+	color:#fff;
+}
+/************************* Directions *************************/
+.center
+{
+	text-align:center;
+}
+.right
+{
+	text-align:right;
+}
+.left
+{
+	text-align:left;
+}
+.middle
+{
+	vertical-align:middle;
+}
+.english
+{
+	direction:ltr;
+}
+.hidden
+{
+	display:none;
+}
+/************************* Sizes *************************/
+.width100	{ max-width:100px; }
+.width150	{ max-width:150px; }
+.width250	{ max-width:250px; }
+.width450	{ max-width:450px; }
+.height100	{ min-height:100px; }
+.height200	{ min-height:200px; }
+/************************* Margins *************************/
+.marginy2
+{
+	margin-top:2px;
+	margin-bottom:2px;
+}
+.marginy5
+{
+	margin-top:5px;
+	margin-bottom:5px;
+}
+.marginy10
+{
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.marginy15
+{
+	margin-top:15px;
+	margin-bottom:15px;
+}
+.marginy20
+{
+	margin-top:20px;
+	margin-bottom:20px;
+}
+.marginy25
+{
+	margin-top:25px;
+	margin-bottom:25px;
+}
+.marginx5
+{
+	margin-right:5px;
+	margin-left:5px;
+}
+.marginx10
+{
+	margin-right:10px;
+	margin-left:10px;
+}
+.marginx15
+{
+	margin-right:15px;
+	margin-left:15px;
+}
+.marginx20
+{
+	margin-right:20px;
+	margin-left:20px;
+}
+/************************* Fonts *************************/
+.small
+{
+	font-size:14px;
+	text-transform:lowercase;
+}
+.medium
+{
+	font-size:15px;
+}
+.big
+{
+	font-size:16px;
+}
+.number
+{
+	font-family:'Tahoma';
+	font-weight:700;
+}
+/************************* Animations *************************/
+.light
+{
+	opacity:1;
+	transition:opacity 0.3s;
+}
+.light:hover
+{
+	opacity:0.7;
+}
+.dark
+{
+	opacity:0.7;
+	transition:opacity 0.3s;
+}
+.dark:hover
+{
+	opacity:1;
+}
+.dark2
+{
+	filter:brightness(75%);
+	transition:filter 0.3s;
+}
+.dark2:hover
+{
+	filter:none;
+}
+.enlarge
+{
+	transition:transform 0.3s;
+}
+.enlarge:hover
+{
+	transform:scale(1.1);
+}
+.enlarge2
+{
+	transition:transform 0.3s;
+}
+.enlarge2:hover
+{
+	transform:scale(1.2);
+}
+.rotate
+{
+	transition:transform 0.5s;
+}
+.rotate:hover
+{
+	transform:rotate(360deg);
+}
+.rotatex
+{
+	transition:transform 0.5s;
+}
+.rotatex:hover
+{
+	transform:rotateX(360deg);
+}
+.rotatey
+{
+	transition:transform 0.5s;
+}
+.rotatey:hover
+{
+	transform:rotateY(360deg);
+}
+.fade
+{
+	animation:fade 2s;
+}
+@keyframes fade
+{
+	from	{ opacity:0.4; }
+	to		{ opacity:1; }
+}
+.totop
+{
+	animation:totop 1s;
+}
+@keyframes totop
+{
+	from	{ top:100px; opacity:0; }
+	to		{ top:0px; opacity:1; }
+}
+.tobottom
+{
+	animation:tobottom 1s;
+}
+@keyframes tobottom
+{
+	from	{ bottom:100px; opacity:0; }
+	to		{ bottom:0px; opacity:1; }
+}
+.toright
+{
+	animation:toright 1s;
+}
+@keyframes toright
+{
+	from	{ right:100px; opacity:0; }
+	to		{ right:0px; opacity:1; }
+}
+.toleft
+{
+	animation:toleft 1s;
+}
+@keyframes toleft
+{
+	from	{ left:100px; opacity:0; }
+	to		{ left:0px; opacity:1; }
+}
+.zoom
+{
+	animation:zoom 1s;
+}
+@keyframes zoom
+{
+	from	{ transform:scale(0.1); } 
+	to		{ transform:scale(1); }
+}
+/************************* Fonts *************************/
+@font-face
+{
+	font-family:'GESSTwoMedium';
+	font-weight:400;
+	src:url('../fonts/gesstwomedium.woff');
+}
+@font-face
+{
+	font-family:'DroidKufi';
+	font-weight:400;
+	src:url('../fonts/droidkufi.woff');
+}
+@font-face
+{
+	font-family:'DroidKufi';
+	font-weight:900;
+	src:url('../fonts/droidkufi-bold.woff');
+}
+@font-face
+{
+	font-family:'Montserrat';
+	font-weight:200;
+	src:url('../fonts/montserrat-extralight.woff') format("woff");
+}
+@font-face
+{
+	font-family:'Montserrat';
+	font-weight:300;
+	src:url('../fonts/montserrat-light.woff') format("woff");
+}
+@font-face
+{
+	font-family:'Montserrat';
+	font-weight:400;
+	src:url('../fonts/montserrat.woff') format("woff");
+}
+@font-face
+{
+	font-family:'FontAwesome';
+	font-weight:400;
+	src:url("../fonts/fontawesome.woff") format("woff");
+}
+@font-face
+{
+	font-family:'FontAwesome';
+	font-weight:900;
+	src:url("../fonts/fontawesome-solid.woff") format("woff");
+}
+@font-face
+{
+	font-family:'FontAwesome';
+	font-weight:400;
+	src:url("../fonts/fontawesome-brands.woff") format("woff");
+}
+/*
+HacenTunisia
+HacenTunisia
+DroidKufi
+droidkufi.woff
+droidkufi-bold.woff
+DinNext
+dinnext.otf
+dinnext-bold.otf
+GESSTwoLight
+gesstwolight.woff
+Gothic
+gothic.woff
+Sansation
+sansation.woff
+*/
